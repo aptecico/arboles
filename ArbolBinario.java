@@ -183,4 +183,12 @@ public class ArbolBinario {
 
         return Math.max(alturaIzquierda, alturaDerecha) + 1;
     }
+    
+    /**
+     * Método getter para obtener la raíz del árbol
+     * @return Nodo raíz del árbol
+     */
+    public Nodo getRaiz() {
+        return raiz;
+    }
 }

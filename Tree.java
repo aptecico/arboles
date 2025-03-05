@@ -4,6 +4,8 @@
  */
 package tree;
 
+import javax.swing.SwingUtilities;
+
 /**
  *
  * @author German
@@ -38,6 +40,12 @@ public class Tree {
 
         // Mostrar altura del árbol
         System.out.println("\nAltura del árbol: " + arbol.obtenerAltura());
+
+        // Mostrar representación gráfica del árbol
+        SwingUtilities.invokeLater(() -> {
+            VisualizadorArbol visualizador = new VisualizadorArbol(arbol);
+            visualizador.mostrarArbol();
+        });
     }
     
 }
